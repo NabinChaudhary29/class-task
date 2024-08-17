@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+       body{
+       
+        background-color: grey;
+       } 
+       .container{
+        /* text-align: center; */
+        /* background-color: white; */
+        width: 100%;
+        margin: 0 auto;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .questions{
+        padding: 25px;
+        width: 400px;
+        background-color: white;
+        align-content: flex-start;
+        border-radius: 10px;
+        border-color: black;
+       }
+       h1{
+        text-align: center;
+       }
+      
+       .button > input{
+        margin: auto;
+        display: block;
+        background-color: blue;
+        width:100px;
+        color: wheat;
+        border-radius: 10px;
+        padding: 5px 10px;
+       }
+       .button > input:hover{
+        background-color: brown;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="questions">
+            <h1>Simple Quiz</h1>
+            <form action="/submit" method="post">
+                <p>1.Please select your favorite Web language?</p>
+                <div class="ans">
+                    <input type="radio" id="html" name="web_language" value="html">
+                    <label for="html">HTML</label> <br>
+                    <input type="radio" id="CSS" name="web_language" value="CSS">
+                    <label for="html">CSS</label> <br>
+                    <input type="radio" id="python" name="web_language" value="python">
+                    <label for="html">Python</label> <br>
+                    <input type="radio" id="java" name="web_language" value="java">
+                    <label for="html">LAVA</label> <br>   
+                </div>
+                <p>2.In what country is Nabin born?</p>
+                <div class="ans">
+                    <input type="radio" id="nepal" name="web_language" value="nepal">
+                    <label for="html">Nepal</label> <br>
+                    <input type="radio" id="india" name="web_language" value="india">
+                    <label for="html">India</label> <br>
+                    <input type="radio" id="australia" name="web_language" value="australia">
+                    <label for="html">Austrlaia</label> <br>
+                    <input type="radio" id="japan" name="web_language" value="japan">
+                     <label for="html">Japan</label> <br>  
+                </div>
+                <p>3.What planet is closest to the sun</p>
+                <div class="ans">
+                <input type="radio" id="jupiter" name="web_language" value="jupiter">
+                <label for="html">Jupiter</label> <br>
+                <input type="radio" id="mars" name="web_language" value="mars">
+                <label for="html">Mars</label> <br>
+                <input type="radio" id="mercury" name="web_language" value="mercury">
+                <label for="html">Mercury</label> <br>
+                <input type="radio" id="earth" name="web_language" value="earth">
+                <label for="html">Earth</label>
+                </div>
+                <br>
+                <div class="button">
+                    <input type="submit" value="Submit">
+                </div>
+                 
+            </form>
+     
+        </div>
+    </div 
+</body>
+</html>
